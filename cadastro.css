@@ -1,0 +1,52 @@
+/* Estilo para a página de formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Mudar a direção para coluna */
+    gap: 20px;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.form-box {
+    width: 100px; /* Largura fixa para o quadrado */
+    height: 500px; /* Altura fixa para o quadrado em pé */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+
+.form-box h1 {
+    font-size: 24px; /* Aumentar o tamanho da fonte para melhor visibilidade */
+    margin: 0 0 20px 0; /* Ajustar margens para espaçamento */
+}
+
+.form-box form {
+    width: 90%; /* Garantir que o formulário ocupe a largura total disponível */
+}
+
+.form-box input,
+.form-box button {
+    width: 100%; /* Garantir que os campos e botões ocupem a largura total */
+    margin-bottom: 15px; /* Adicionar espaçamento entre os campos */
+}
+
+.form-box button {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #82CB6F;
+    color: white;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #5a9a4c; /* Ajustar a cor ao passar o mouse */
+}

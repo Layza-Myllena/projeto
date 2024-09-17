@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oleaginosas</title>
+    <link rel="stylesheet" href="Padrao.css">
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <!-- Overlay para escurecer o fundo -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu Vertical -->
+    <div class="menu-vertical" id="menu-vertical">
+        <a href="#Oleaginosas">Oleaginosas</a>
+        <a href="#Chás">Chás</a>
+        <a href="#Farinhas">Farinhas</a>
+        <a href="#Temperos">Temperos e Especiarias</a>
+
+    </div>
+
+    <div class="a">Compre e receba no mesmo dia</div>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="material-icons"></i>Logo</a>
+            <ul class="right hide-on-med-and-down">
+
+
+                <!-- Campo de pesquisa -->
+                <li style="display: flex; align-items: center;">
+                    <i class="material-icons">search</i>
+                    <input id="search-input" type="text" placeholder="Digite o nome do produto..."
+                        style="margin-left: 5px; border: none;">
+                </li>
+
+
+                <li>
+                    <a href="TelaContatos.html" style="display: flex; align-items: center;">
+                        <i class="material-icons">phone</i>
+                        <span style="margin-left: 5px;">Telefone</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tela_cadastro.html" style="display: flex; align-items: center;">
+                        <i class="material-icons">account_circle</i>
+                        <span style="margin-left: 5px;">Minha Conta</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="Carrinho.html" style="display: flex; align-items: center;">
+                        <i class="material-icons">add_shopping_cart</i>
+                        <span style="margin-left: 5px;">Olhar o Carrinho</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" id="menu-toggle"><i class="material-icons">more_vert</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h1 id="Oleaginosas" class="Oleaginosas">Oleaginosas</h1>
+
+    <!-- Primeiro bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Pistache sem Casca Cru.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Pistache sem Casca</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Castanha de Caju Torrada"
+                data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Castanha do Pará Média sem Casca.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Castanha do Pará sem Casca</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Castanha do Pará sem Casca"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+
+        </div>
+
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Nozes Inteiras (Mariposa).webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Nozes Inteiras (Mariposa)</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Nozes Inteiras (Mariposa)"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Nozes Quebradas.webp" alt="Nozes Quebradas" class="produto-imagem">
+            <h2 class="produto-nome">Nozes Quebradas</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Nozes Quebradas"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Segundo bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Mix de Castanhas Premium (sem uva passa).webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Mix de Castanhas(sem uva passa)</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Mix de Castanhas(sem uva passa)"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Ameixa sem Caroço.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Ameixa sem Caroço</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Ameixa sem Caroço"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Mix de Castanhas.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Mix de Castanhas</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Mix de Castanhas"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Amendoim Torrado sem Pele sem Sal.webp" Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Amendoim Torrado sem Sal</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Amendoim Torrado sem Sal"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Terceiro bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Castanha de Caju Torrada sem Sal W1 em Banda.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Castanha de Caju Torrada sem Sal</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Castanha de Caju Torrada sem Sal"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Amêndoa Torrada sem Sal.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Amêndoa Torrada sem Sal</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Amêndoa Torrada sem Sal"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Amêndoa Crua sem Casca.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Amêndoa Crua sem Casca</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Amêndoa Crua sem Casca"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Castanha de Caju Torrada sem Sal W1.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Castanha de Caju Torrada sem Sal</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Castanha de Caju Torrada sem Sal"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Quarto bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Castanha de Caju SLW1 Torrada sem Sal.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Castanha de Caju Torrada sem Sal</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Castanha de Caju Torrada sem Sal"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Amêndoa Defumada.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Amêndoa Defumada</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Amêndoa Defumada"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Avelã sem Casca.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Avelã sem Casca</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Avelã sem Casca"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Castanha de Caju Torrada com Sal W1 em Banda.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Castanha de Caju Torrada </h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Castanha de Caju Torrada"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+        <script src="script.js"></script>
+
+    </div>
+
+
+    <h1 id="Chás" class="Oleaginosas" id="Chás">Chás</h1>
+
+    <!-- Primeiro bloco  -->
+
+    <div class="produtos-grid">
+    
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Camomila.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Camomila</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Camomila"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Hibisco em Flor.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Hibisco em Flor</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Hibisco em Flor"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Chá de Capim Limão ou Capim Cidreira.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Chá de Capim Limão </h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Chá de Capim Limão "
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="cha_verde.webp" alt="Nozes Quebradas" class="produto-imagem">
+            <h2 class="produto-nome">Cha Verde</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Cha Verde"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Repetir o mesmo bloco para 20 produtos no total -->
+    </div>
+
+    <!-- Segundo bloco  -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Chá de Cavalinha.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Chá de Cavalinha</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Chá de Cavalinha"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Chá de Melissa.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Chá de Melissa (Ou Erva Cidreira)</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Chá de Melissa (Ou Erva Cidreira)"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Chá de Maracujá.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Chá de Maracujá(folhas e talos)</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Chá de Maracujá(folhas e talos)"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Mulungu Casca Rasurada.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Mulungu Casca Rasurada</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Mulungu Casca Rasurada"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Repetir o mesmo bloco para 20 produtos no total -->
+    </div>
+
+    <!-- Terceiro bloco  -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Alfazema Azul ou Lavanda Azul.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Alfazema Azul ou Lavanda Azul</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Alfazema Azul ou Lavanda Azul"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Espinheira Santa - Granel.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Espinheira Santa - Granel</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Espinheira Santa - Granel"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Dente de Leão (Taraxacum Officinale).webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Dente de Leão</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Dente de Leão"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Manjericão Desidratado.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Manjericão Desidratado</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Dente de Leão"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Repetir o mesmo bloco para 20 produtos no total -->
+    </div>
+
+    <!-- Quarto bloco  -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Folha de Amora.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Folha de Amora</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Folha de Amora"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Flor de Jasmim.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Flor de Jasmim</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Flor de Jasmim"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Chá de Calêndula.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Chá de Calêndula</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Chá de Calêndula"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Chá de Sene.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Chá Preto Importado (fino)</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Chá Preto Importado"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+
+
+
+
+    <h1 id="Farinhas" class="Oleaginosas">Farinhas</h1>
+
+    <!-- Primeiro bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Farinha de Amêndoas.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Amêndoas</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Amêndoas"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Farinha de Aveia.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Aveia</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Aveia"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Tribullus Terrestris Extrato Seco (40% saponinas).webp" alt="Nome do Produto"
+                class="produto-imagem">
+            <h2 class="produto-nome">Tribullus Terrestris Extrato Seco</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Tribullus Terrestris Extrato Seco"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Farinha de Coco Clara.webp" alt="Nozes Quebradas" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Coco Clara</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Coco Clara"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Segundo bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Farinha de Linhaça Dourada.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Linhaça Dourada</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Linhaça Dourada"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Farinha de Grão De Bico.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Grão de Bico</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Grão de Bico"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Beterraba em Pó ou Farinha de Beterraba.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Beterraba em Pó ou Farinha </h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Beterraba em Pó ou Farinha "
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Farinha de Arroz Branca.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Arroz Branca</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Arroz Branca"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Terceiro bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Ora Pro Nobis em Pó.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Ora Pro Nobis em Pó</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Ora Pro Nobis em Pó"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Farinha de Amendoim.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Amendoim</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Amendoim"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Farinha de Castanha de Caju Torrada.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Castanha de Caju </h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Castanha de Caju"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Goma Xantana.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Goma Xantana</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Goma Xantana"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Quarto bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Polvilho Doce (Fécula de Mandioca).webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Polvilho Doce</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Polvilho Doce"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Farinha de Arroz Integral.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Arroz Integral</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Arroz Integral"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Farinha Panko.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha Panko</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha Panko"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Farinha de Maracujá.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Farinha de Maracujá</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Farinha de Maracujá"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+
+
+    <h1 id="Temperos" class="Oleaginosas">Temperos e Especiarias</h1>
+
+    <!-- Primeiro bloco -->
+
+    <div class="produtos-grid">
+
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Páprica Defumada.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Páprica Defumada</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Páprica Defumada"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Cúrcuma (Açafrão da Terra).webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Cúrcuma (Açafrão da Terra)</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Cúrcuma (Açafrão da Terra)"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Lemon Pepper.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Lemon Pepper</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Lemon Pepper"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Mix de Temperos Chimichurri Sem Pimenta.webp" alt="Nozes Quebradas" class="produto-imagem">
+            <h2 class="produto-nome">Temperos Chimirri Sem Pimenta</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Temperos Chimirri Sem Pimenta"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Segundo bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Oregano Peruano.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Oregano Peruano (sem uva passa)</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Oregano Peruano (sem uva passa)"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Erva Doce.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Erva Doce</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Erva Doce"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Alho em Pó.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Alho em Pó</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Alho em Pó"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Gengibre Moído Premium.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Gengibre Moído Premium</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Gengibre Moído Premium"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+    </div>
+
+    <!-- Terceiro bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Canela em pó Premium.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Canela em Pó</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Canela em Pó"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Mix de Temperos do Edu.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Mix de Temperos do Edu</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Mix de Temperos do Edu"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Sal Rosa do Himalaia Fino.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Sal Rosa do Himalaia Fino</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Sal Rosa do Himalaia Fino"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Canela 6 cm (jawa).webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Canela 6 cm</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Canela 6 cm"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+    </div>
+
+    <!-- Quarto bloco -->
+
+    <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="Alecrim.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Alecrim</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Alecrim"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="Páprica Picante.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Páprica Picante</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Páprica Picante"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="Cebola em Pó.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Cebola em Pó</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Cebola em Pó"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="Mix de Temperos Ana Maria Braga.webp" alt="Nome do Produto" class="produto-imagem">
+            <h2 class="produto-nome">Mix de Temperos Ana Maria Braga</h2>
+            <p class="produto-valor">A partir de <span>R$ 10,00</span></p>
+            <button class="produto-adicionar-btn" data-produto-id="1" data-produto-nome="Mix de Temperos Ana Maria Braga"
+            data-produto-preco="10.00">Adicionar ao Carrinho</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        // Função de pesquisa de produtos
+        document.getElementById("search-input").addEventListener("input", function () {
+            const termoPesquisa = this.value.toLowerCase();
+            const produtos = document.querySelectorAll(".produto");
+
+            produtos.forEach(produto => {
+                const nomeProduto = produto.querySelector(".produto-nome").textContent.toLowerCase();
+
+                if (nomeProduto.includes(termoPesquisa)) {
+                    produto.style.display = "block"; // Mostra o produto se corresponder à pesquisa
+                } else {
+                    produto.style.display = "none"; // Esconde o produto se não corresponder à pesquisa
+                }
+            });
+        });
+
+
+
+        // Função para adicionar um item ao carrinho
+        function adicionarAoCarrinho(event) {
+            const botao = event.target;
+            const produtoId = botao.getAttribute('data-produto-id');
+            const produtoNome = botao.getAttribute('data-produto-nome');
+            const produtoPreco = parseFloat(botao.getAttribute('data-produto-preco'));
+
+            // Verifica se os dados estão sendo capturados corretamente
+            if (!produtoId || !produtoNome || isNaN(produtoPreco)) {
+                alert("Dados do produto inválidos!");
+                return;
+            }
+
+            const item = {
+                id: produtoId,
+                nome: produtoNome,
+                preco: produtoPreco
+            };
+
+            // Recupera o carrinho do localStorage ou cria um novo
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+            // Adiciona o novo item ao carrinho
+            carrinho.push(item);
+
+            // Salva o carrinho atualizado no localStorage
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+            alert('Item adicionado ao carrinho!');
+        }
+
+        // Adiciona o evento de clique a todos os botões de "Adicionar ao Carrinho"
+        document.querySelectorAll('.produto-adicionar-btn').forEach(button => {
+            button.addEventListener('click', adicionarAoCarrinho);
+        });
+
+        // JavaScript para abrir e fechar o menu ao clicar nos três pontos
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            var menu = document.getElementById("menu-vertical");
+            var overlay = document.getElementById("overlay");
+
+            if (menu.classList.contains("menu-ativo")) {
+                menu.classList.remove("menu-ativo");
+                overlay.style.display = "none";
+            } else {
+                menu.classList.add("menu-ativo");
+                overlay.style.display = "block";
+            }
+        });
+
+
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+</body>
+
+</html>

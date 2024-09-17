@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="PaginaContato.css">
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .a {
+            background-color: #F7E135;
+            width: 100%;
+            height: 34px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 111px;
+            background-color: #014641;
+            padding: 20px;
+        }
+
+        .nav-wrapper .brand-logo img {
+            width: 64px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #014641;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .contact-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .contact-box h2 {
+            font-size: 20px;
+            color: #014641;
+        }
+
+        .contact-box p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #014641;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #82CB6F;
+        }
+
+        footer {
+            background-color: #014641;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="a">Compre e receba no mesmo dia</div>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="material-icons"></i>Logo</a>
+            <ul class="right hide-on-med-and-down">               
+               
+                
+                <ul class="right hide-on-med-and-down" style="margin-left: 1100px;">
+                    <li>
+                        <a href="Oleaginosas.html" style="display: flex; align-items: center; color: #ffffff; text-decoration: none;">
+                            <i class="material-icons" style="font-size: 24px;">arrow_back</i>
+                            <span >Voltar às compras</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Fale Conosco</h1>
+
+    <div class="contact-section">
+        <!-- Seção de Telefone -->
+        <div class="contact-box">
+            <h2><i class="material-icons">phone</i> Telefone</h2>
+            <ul>
+                <li>(11) 1234-5678</li>
+                <li>(11) 9876-5432 (WhatsApp)</li>
+            </ul>
+        </div>
+
+        <!-- Seção de Email -->
+        <div class="contact-box">
+            <h2><i class="material-icons">email</i> Email</h2>
+            <ul>
+                <li><a href="mailto:contato@empresa.com">contato@empresa.com</a></li>
+                <li><a href="mailto:support@empresa.com">support@empresa.com</a></li>
+            </ul>
+        </div>
+
+        <!-- Seção de Endereço -->
+        <div class="contact-box">
+            <h2><i class="material-icons">location_on</i> Endereço</h2>
+            <p>Rua Exemplo, 123, Bairro Exemplo<br>Cidade - Estado<br>CEP: 00000-000</p>
+        </div>
+
+        <!-- Seção de Horário de Atendimento -->
+        <div class="contact-box">
+            <h2><i class="material-icons">access_time</i> Horário de Atendimento</h2>
+            <ul>
+                <li>Segunda a Sexta: 8h às 18h</li>
+                <li>Sábado: 9h às 14h</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

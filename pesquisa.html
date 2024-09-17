@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Produtos</title>
+    <link rel="stylesheet" href="Padrao.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <h1>Pesquisar Produtos</h1>
+
+    <!-- Campo de pesquisa -->
+    <div class="input-field">
+        <input id="search-input" type="text" placeholder="Digite o nome do produto...">
+        <button id="search-btn" class="btn">Pesquisar</button>
+    </div>
+
+    <!-- Resultados da pesquisa -->
+    <ul id="resultados-pesquisa"></ul>
+
+    <script>
+        // Dados de produtos para simular uma base de dados
+        const produtos = [
+            { nome: "Castanha do Pará sem Casca", preco: "R$ 10,00" },
+            { nome: "Nozes Inteiras (Mariposa)", preco: "R$ 15,00" },
+            { nome: "Amêndoas Cruas", preco: "R$ 12,00" },
+            { nome: "Pistache sem Casca", preco: "R$ 18,00" },
+            { nome: "Avelã Torrada", preco: "R$ 20,00" },
+        ];
+
+        // Função para realizar a pesquisa
+        function pesquisarProdutos() {
+            const termoPesquisa = document.getElementById("search-input").value.toLowerCase();
+            const resultados = produtos.filter(produto => produto.nome.toLowerCase().includes(termoPesquisa));
+
+            exibirResultados(resultados);
+        }
+
+        // Função para exibir os resultados da pesquisa
+        function exibirResultados(resultados) {
+            const listaResultados = document.getElementById("resultados-pesquisa");
+            listaResultados.innerHTML = ''; // Limpa resultados anteriores
+
+            if (resultados.length === 0) {
+                const item = document.createElement("li");
+                item.textContent = "Nenhum produto encontrado.";
+                listaResultados.appendChild(item);
+            } else {
+                resultados.forEach(produto => {
+                    const item = document.createElement("li");
+                    item.textContent = `${produto.nome} - ${produto.preco}`;
+                    listaResultados.appendChild(item);
+                });
+            }
+        }
+
+        // Adiciona evento de clique no botão de pesquisa
+        document.getElementById("search-btn").addEventListener("click", pesquisarProdutos);
+
+        // Permite que a pesquisa seja feita ao pressionar "Enter"
+        document.getElementById("search-input").addEventListener("keyup", function (event) {
+            if (event.key === "Enter") {
+                pesquisarProdutos();
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

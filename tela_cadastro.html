@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>  Minha Conta</title>
+    <link rel="stylesheet" href="PaginaCadastro.css">
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .a {
+            background-color: #F7E135;
+            width: 100%;
+            height: 34px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 111px;
+            background-color: #014641;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .nav-wrapper .brand-logo {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-wrapper .brand-logo i {
+            margin-right: 10px;
+            /* Espaçamento entre o ícone e o texto */
+
+        }
+
+        .nav-wrapper ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-wrapper li {
+            margin-left: 20px;
+        }
+
+        .nav-wrapper li:first-child {
+            margin-left: 0;
+        }
+
+        footer {
+            background-color: #014641;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .pagination {
+            display: inline-flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pagination li {
+            margin: 0 5px;
+        }
+
+        .pagination a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .pagination .active a {
+            font-weight: bold;
+        }
+
+        .categorias {
+            display: flex;
+            justify-content: space-around;
+            /* Distribui os botões com espaço ao redor */
+            align-items: center;
+            /* Centraliza os botões verticalmente */
+            width: 100%;
+            height: 63px;
+            background-color: #ffffff;
+            /* Cor de fundo opcional */
+            padding: 0 10px;
+            /* Espaçamento interno opcional */
+        }
+
+        .categoria-btn {
+            flex: 1;
+            /* Cada botão ocupa espaço igual */
+            height: 100%;
+            /* Garante que os botões tenham a altura total da div */
+            margin: 0 5px;
+            /* Espaçamento entre os botões */
+            background-color: #ffffff;
+            /* Cor de fundo do botão */
+            border: none;
+            /* Remove a borda */
+            font-size: 16px;
+            /* Tamanho do texto */
+            cursor: pointer;
+            /* Mostra um cursor de clique */
+            transition: background-color 0.3s;
+            /* Transição suave na mudança de cor */
+        }
+
+        .categoria-btn:hover {
+            background-color: #e0e0e0;
+            /* Cor de fundo ao passar o mouse */
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .form-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .form-box h1 {
+            font-size: 20px; /* Ajuste o tamanho da fonte do h1 */
+            margin-top: 0;
+            font-family: 'Inter', sans-serif; /* Aplica a fonte Inter ao h1 */
+            font-weight: bold; /* Deixa o texto em negrito */
+        }
+
+        .form-box h2 {
+            font-size: 20px; /* Ajuste o tamanho da fonte do h2 */
+            margin-top: 0;
+            font-family: 'Inter', sans-serif; /* Aplica a fonte Inter ao h2 */
+            font-weight: bold; /* Deixa o texto em negrito */
+        }
+
+        .form-box p {
+            font-size: 15px; /* Ajuste o tamanho da fonte do p */
+            margin-top: 0;
+            font-family: 'Inter', sans-serif; /* Aplica a fonte Inter ao p */
+            font-weight: bold; /* Deixa o texto em negrito */
+        }
+/* Estilo para centralizar os quadrados */
+.form-container {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            flex-direction: row; /* Alinha os itens em linha */
+            gap: 20px; /* Espaçamento entre os quadrados */
+            padding: 20px; /* Espaçamento interno ao redor dos quadrados */
+            min-height: 400px; /* Altura mínima para garantir o espaço necessário */
+
+             .form-box {
+            flex: 1; /* Ocupa o espaço disponível */
+            min-width: 300px; /* Largura mínima para cada quadrado */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        }
+        /* Novo estilo para os quadrados */
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            /* Espaço entre os quadrados */
+            gap: 5px;
+            /* Espaçamento entre os quadrados */
+            padding: 10px;
+            /* Espaçamento interno ao redor dos quadrados */
+            flex-wrap: wrap;
+            /* Permite que os quadrados se ajustem em telas menores */
+        }
+
+        .form-box {
+            flex: 1;
+            /* Ocupa o espaço disponível */
+            min-width: 10px;
+            /* Largura mínima para cada quadrado */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .form-box h2 {
+            margin-top: 0;
+        }
+
+        .form-box label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-box input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* Inclui padding e border no tamanho total */
+        }
+
+        .form-box button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #82CB6F;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-box button:hover {
+            background-color: #82CB6F;
+        }
+        .imageLogo{
+            width: 64px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">Compre e receba no mesmo dia</div>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="material-icons"></i>Logo</a>
+            <ul class="right hide-on-med-and-down">               
+               
+                
+                <ul class="right hide-on-med-and-down" style="margin-left: 1000px;">
+                    <li>
+                        <a href="Oleaginosas.html" style="display: flex; align-items: center; color: #ffffff; text-decoration: none;">
+                            <i class="material-icons" style="font-size: 24px;">arrow_back</i>
+                            <span >Voltar às compras</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <!-- Quadrado 1: Já sou cadastrado -->
+        <div class="form-box">
+            <h1>JÁ SOU CADASTRADO</h1>
+            <form>
+                <p>PARA SE AUTENTICAR, INFORME SEU E-MAIL OU CPF.</p>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+
+
+    <!-- Quadrado 2: Esta é a minha primeira compra -->
+<div class="form-box">
+    <form action="Pagina Cadastro.html">
+        <h2>ESTÁ É A MINHA PRIMEIRA COMPRA</h2>
+        <p>O CADASTRO EM NOSSA LOJA É SIMPLES E RÁPIDO</p>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

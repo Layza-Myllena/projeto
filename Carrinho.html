@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="Padrao.css">
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="Oleaginosas.html" class="brand-logo"><i class="material-icons"></i>Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="Oleaginosas.html" style="display: flex; align-items: center; color: #ffffff; text-decoration: none;">
+                        <i class="material-icons" style="font-size: 24px;">arrow_back</i>
+                        <span style="margin-left: 5px;">Voltar às compras</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+
+        <!-- Carrinho de compras -->
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho-itens">
+                <!-- Os itens do carrinho serão inseridos aqui pelo JavaScript -->
+            </tbody>
+        </table>
+
+        <h4>Total: R$ <span id="total-preco">0.00</span></h4>
+
+        <button class="btn" id="finalizar-compra">Finalizar Compra</button>
+    </div>
+
+    <script>
+        // Função para carregar os itens do carrinho
+        function carregarCarrinho() {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            const tabelaItens = document.getElementById('carrinho-itens');
+            const totalPrecoElemento = document.getElementById('total-preco');
+            let totalPreco = 0;
+
+            // Limpa a tabela antes de popular com os itens do carrinho
+            tabelaItens.innerHTML = '';
+
+            carrinho.forEach((item, index) => {
+                const novaLinha = document.createElement('tr');
+
+                novaLinha.innerHTML = `
+                    <td>${item.nome}</td>
+                    <td>R$ ${item.preco.toFixed(2)}</td>
+                    <td>1</td>
+                    <td><button class="btn red lighten-1" onclick="removerItem(${index})">Remover</button></td>
+                `;
+
+                tabelaItens.appendChild(novaLinha);
+
+                // Atualiza o preço total
+                totalPreco += item.preco;
+            });
+
+            totalPrecoElemento.textContent = totalPreco.toFixed(2);
+        }
+
+        // Função para remover item do carrinho
+        function removerItem(index) {
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+            // Remove o item do array pelo índice
+            carrinho.splice(index, 1);
+
+            // Atualiza o localStorage com o carrinho atualizado
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+            // Recarrega a lista de itens no carrinho
+            carregarCarrinho();
+        }
+
+        // Carrega o carrinho ao abrir a página
+        carregarCarrinho();
+
+        // Finalizar compra (simulação)
+        document.getElementById('finalizar-compra').addEventListener('click', () => {
+            alert('Compra finalizada com sucesso!');
+            localStorage.removeItem('carrinho'); // Limpa o carrinho
+            carregarCarrinho(); // Atualiza a página
+        });
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
